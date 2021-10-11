@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://lib.baomitu.com/vue/3.1.1/vue.global.prod.min.js"></script>
+  <script src="https://lib.baomitu.com/axios/0.21.1/axios.min.js"></script>
+
+  <link href="https://lib.baomitu.com/element-plus/1.0.2-beta.48/theme-chalk/base.min.css" rel="stylesheet">
+  <link href="https://lib.baomitu.com/element-plus/1.0.2-beta.48/theme-chalk/el-table-column.min.css" rel="stylesheet">
+  <link href="https://lib.baomitu.com/element-plus/1.0.2-beta.48/theme-chalk/el-table.min.css" rel="stylesheet">
+  <link href="https://lib.baomitu.com/element-plus/1.0.2-beta.48/theme-chalk/el-button.min.css" rel="stylesheet">
+  <script src="https://lib.baomitu.com/element-plus/1.0.2-beta.48/index.full.min.js"></script>
+  <title>装机软件 - 本地数据</title>
+  <style>
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: none;
+      background-image: linear-gradient(120deg, #c2e9fb 0%, #a1c4fd 100%);
+      -webkit-box-shadow: none;
+    }
+
+    ::-webkit-scrollbar-track {
+      -webkit-box-shadow: none;
+      border-radius: 10px;
+      background-color: none;
+      -webkit-box-shadow: none;
+    }
+
+    .table_main {
+      background-color: #fff;
+      box-sizing: border-box;
+      box-shadow: 0px 6px 14px 2px #066bb342;
+      border-radius: 10px;
+      padding: 10px;
+      border: 1px solid #ebeef4;
+      width: 90%;
+      max-width: 1024px;
+      height: 90vh;
+      overflow-y: auto;
+      margin: 0 auto;
+    }
+
+    .gradient-text {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <h2 class="gradient-text">重装系统后要装的软件——本地数据</h2>
+    <div class="table_main">
+      <el-table :data="tableData" stripe highlight-current-row :show-header="false"
+        @current-change="handleCurrentChange">
+        <el-table-column type="index" width="50">
+        </el-table-column>
+        <el-table-column prop="name">
+        </el-table-column>
+        <el-table-column prop="downloadUrl" width="120px" align="center">
+          <template v-slot="{row}">
+            <el-button round size="small" type="primary" icon="el-icon-download" @click="goDownload(row.downloadUrl)">
+              下载
+            </el-button>
+          </template>
+        </el-table-column>
+      </el-table>
+    </div>
+  </div>
+  <script>
+    const {
+      ref,
+      createApp,
+      reactive,
+      toRefs,
+      onMounted
+    } = Vue;
+    const app = createApp({
+      setup() {
+        // 获取表格数据
+        const state = reactive({
+          tableData: [{
+              "name": "Bandizip",
+              "downloadUrl": "https://dl.bandisoft.com/bandizip.old/BANDIZIP6-SETUP.EXE?2"
+            },
+            {
+              "name": "Bandizip——图标（提取码：jpg4）",
+              "downloadUrl": "https://pan.baidu.com/s/1Jpl4H3VCZWvhtqenZBI6Dg"
+            },
+            {
+              "name": "搜狗输入法",
+              "downloadUrl": "https://acold.lanzoux.com/iDZaLlnpoxg"
+            },
+            {
+              "name": "卡巴斯基",
+              "downloadUrl": "https://www.kaspersky.com.cn/downloads/thank-you/total-security-free-trial"
+            },
+            {
+              "name": "迅雷X",
+              "downloadUrl": "http://down.sandai.net/thunderx/XunLeiSetup10.1.38.890.exe"
+            },
+            {
+              "name": "迅雷——落尘之木补丁",
+              "downloadUrl": "https://dl.luochenzhimu.com/software/Thunder/ThunderX/ThunderX_10.1.38.890.zip"
+            },
+            {
+              "name": "蜂巢客户端",
+              "downloadUrl": "https://666yun.men/app/Bee-win4.1.2.zip"
+            },
+            {
+              "name": "QQ",
+              "downloadUrl": "https://im.qq.com/pcqq/"
+            },
+            {
+              "name": "Chrome",
+              "downloadUrl": "https://www.google.cn/chrome/?standalone=1&platform=win64"
+            },
+            {
+              "name": "海盗船驱动",
+              "downloadUrl": "https://www.corsair.com/zh/zh/icue"
+            },
+            {
+              "name": "everything",
+              "downloadUrl": "https://www.voidtools.com/zh-cn/"
+            },
+            {
+              "name": "Git",
+              "downloadUrl": "https://npm.taobao.org/mirrors/git-for-windows/"
+            },
+            {
+              "name": "罗技驱动",
+              "downloadUrl": "https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe"
+            },
+            {
+              "name": ".NET Desktop Runtime",
+              "downloadUrl": "https://dotnet.microsoft.com/download/dotnet/5.0"
+            },
+            {
+              "name": ".NET Framework",
+              "downloadUrl": "https://dotnet.microsoft.com/download/dotnet-framework"
+            },
+            {
+              "name": "Office",
+              "downloadUrl": "https://otp.landian.vip/zh-cn/download.html"
+            },
+            {
+              "name": "微软C++运行库",
+              "downloadUrl": "https://www.lanzoui.com/iJGF5pzdmid"
+            },
+            {
+              "name": "VS Code",
+              "downloadUrl": "https://code.visualstudio.com/"
+            },
+            {
+              "name": "MSI Afterburner",
+              "downloadUrl": "http://download-cn.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip"
+            },
+            {
+              "name": "Node",
+              "downloadUrl": "https://nodejs.org/zh-cn/"
+            },
+            {
+              "name": "NVIDIA显卡驱动",
+              "downloadUrl": "https://www.nvidia.cn/Download/index.aspx?lang=cn"
+            },
+            {
+              "name": "Potplayer",
+              "downloadUrl": "https://potplayer.org/"
+            },
+            {
+              "name": "QQ音乐",
+              "downloadUrl": "https://dldir1.qq.com/music/clntupate/QQMusic_YQQLogin.exe"
+            },
+            {
+              "name": "PM981A驱动",
+              "downloadUrl": "https://www.samsung.com/semiconductor/minisite/ssd/download/tools/"
+            },
+            {
+              "name": "Steam",
+              "downloadUrl": "https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe"
+            },
+            {
+              "name": "uTools",
+              "downloadUrl": "https://www.u.tools/"
+            },
+            {
+              "name": "百度网盘",
+              "downloadUrl": "http://pan.baidu.com/download"
+            },
+            {
+              "name": "战网",
+              "downloadUrl": "https://www.battlenet.com.cn/download/getInstaller?os=win&installer=Battle.net-Setup-CN.exe"
+            },
+            {
+              "name": "EPIC",
+              "downloadUrl": "https://www.epicgames.com/shadowcomplex/download"
+            },
+            {
+              "name": "WeGame",
+              "downloadUrl": "https://www.wegame.com.cn/"
+            },
+            {
+              "name": "比特彗星",
+              "downloadUrl": "https://www.lanzoux.com/b073c7g4f"
+            },
+            {
+              "name": "有道词典",
+              "downloadUrl": "https://www.youdao.com/"
+            },
+            {
+              "name": "微信",
+              "downloadUrl": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe"
+            },
+            {
+              "name": "图吧工具箱",
+              "downloadUrl": "http://www.tbtool.cn/"
+            },
+            {
+              "name": "截图工具",
+              "downloadUrl": "https://www.snipaste.com/"
+            },
+            {
+              "name": "TrafficMonitor",
+              "downloadUrl": "https://github.com/zhongyang219/TrafficMonitor"
+            },
+            {
+              "name": "Clash",
+              "downloadUrl": "https://github.com/Fndroid/clash_for_windows_pkg"
+            },
+            {
+              "name": "B站下载器",
+              "downloadUrl": "http://client.jijidown.com/"
+            },
+            {
+              "name": "StartIsBack",
+              "downloadUrl": "https://s3.amazonaws.com/startisback/StartIsBackPlusPlus_setup.exe"
+            },
+            {
+              "name": "风灵月影",
+              "downloadUrl": "https://soft.qwp365.cn/soft/FLiNGTrainer_setup.exe"
+            },
+            {
+              "name": "罗技摄像头驱动",
+              "downloadUrl": "https://www.logitech.com.cn/zh-cn/product/capture"
+            },
+            {
+              "name": "雷云",
+              "downloadUrl": "http://cn.razerzone.com/synapse-3"
+            },
+            {
+              "name": "Github Desktop",
+              "downloadUrl": "https://desktop.github.com/"
+            },
+            {
+              "name": "Github Desktop——汉化补丁",
+              "downloadUrl": "https://github.com/lkyero/GitHubDesktop_zh/releases"
+            },
+            {
+              "name": "火绒弹窗拦截",
+              "downloadUrl": "https://free.lanzoui.com/inG21oj4hpe"
+            },
+            {
+              "name": "鸿蒙字体",
+              "downloadUrl": "https://developer.harmonyos.com/cn/docs/design/des-resources/general-0000001157315901"
+            },
+            {
+              "name": "JetBrains Mono字体",
+              "downloadUrl": "https://github.com/JetBrains/JetBrainsMono/releases"
+            },
+            {
+              "name": "Photoshop （提取码：e9ma 解压密码：@vposy）",
+              "downloadUrl": "https://pan.baidu.com/share/init?surl=1Ca1FjBfLTvutW-TBRUrbw"
+            }
+          ]
+        })
+
+        // 打开网页
+        const goDownload = (url) => {
+          open(url)
+        }
+
+        // 点击表格高亮
+        let currentRow = ref(null)
+        const handleCurrentChange = (val) => {
+          currentRow.val = val;
+        }
+        return {
+          currentRow,
+          goDownload,
+          handleCurrentChange,
+          ...toRefs(state)
+        }
+      }
+    });
+    app.use(ElementPlus);
+    app.mount("#app");
+  </script>
+
+</body>
+
+</html>
