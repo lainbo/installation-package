@@ -75,7 +75,7 @@
         </el-table-column>
         <el-table-column prop="downloadUrl" width="120" align="center">
           <template v-slot="{row}">
-            <el-button round size="small" type="primary" icon="el-icon-download" @click="goDownload(row.downloadUrl)">
+            <el-button round size="small" type="primary" @click="goDownload(row.downloadUrl)">
               下载
             </el-button>
           </template>
