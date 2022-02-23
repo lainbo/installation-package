@@ -89,207 +89,191 @@
       createApp
     } = Vue;
     const app = createApp({
-      setup() {
+      setup () {
         const tableData = ref([{
-            "label": "Bandizip",
-            "downloadUrl": "https://cn.bandisoft.com/bandizip/dl.php?old"
-          },
-          {
-            "label": "Bandizip——图标（提取码：jpg4）",
-            "downloadUrl": "https://pan.baidu.com/s/1Jpl4H3VCZWvhtqenZBI6Dg"
-          },
-          {
-            "label": "搜狗输入法",
-            "downloadUrl": "https://pinyin.sogou.com/"
-          },
-          {
-            "label": "卡巴斯基",
-            "downloadUrl": "https://www.kaspersky.com.cn/downloads/thank-you/internet-security-free-trial#download"
-          },
-          {
-            "label": "迅雷X",
-            "downloadUrl": "http://down.sandai.net/thunderx/XunLeiSetup10.1.38.890.exe"
-          },
-          {
-            "label": "迅雷——落尘之木补丁",
-            "downloadUrl": "https://dl.luochenzhimu.com/software/Thunder/ThunderX/ThunderX_10.1.38.890.zip"
-          },
-          {
-            "label": "蜂巢客户端",
-            "downloadUrl": "https://666yun.men/app/Bee-win4.1.2.zip"
-          },
-          {
-            "label": "QQ",
-            "downloadUrl": "https://im.qq.com/pcqq/"
-          },
-          {
-            "label": "Chrome",
-            "downloadUrl": "https://www.google.cn/chrome/?standalone=1&platform=win64"
-          },
-          {
-            "label": "everything",
-            "downloadUrl": "https://www.voidtools.com/zh-cn/"
-          },
-          {
-            "label": "Git",
-            "downloadUrl": "https://npm.taobao.org/mirrors/git-for-windows/"
-          },
-          {
-            "label": "罗技驱动",
-            "downloadUrl": "https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe"
-          },
-          {
-            "label": ".NET Desktop Runtime",
-            "downloadUrl": "https://dotnet.microsoft.com/download/dotnet/5.0"
-          },
-          {
-            "label": ".NET Framework",
-            "downloadUrl": "https://dotnet.microsoft.com/download/dotnet-framework"
-          },
-          {
-            "label": "Office",
-            "downloadUrl": "https://otp.landian.vip/zh-cn/download.html"
-          },
-          {
-            "label": "微软C++运行库",
-            "downloadUrl": "https://www.lanzoui.com/iJGF5pzdmid"
-          },
-          {
-            "label": "VS Code",
-            "downloadUrl": "https://code.visualstudio.com/"
-          },
-          {
-            "label": "MSI Afterburner",
-            "downloadUrl": "http://download-cn.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip"
-          },
-          {
-            "label": "Node",
-            "downloadUrl": "https://nodejs.org/zh-cn/"
-          },
-          {
-            "label": "NVIDIA显卡驱动",
-            "downloadUrl": "https://www.nvidia.cn/Download/index.aspx?lang=cn"
-          },
-          {
-            "label": "Potplayer",
-            "downloadUrl": "https://potplayer.org/"
-          },
-          {
-            "label": "QQ音乐",
-            "downloadUrl": "https://dldir1.qq.com/music/clntupate/QQMusic_YQQLogin.exe"
-          },
-          {
-            "label": "网易云音乐",
-            "downloadUrl": "https://d1.music.126.net/dmusic/cloudmusicsetup2.9.5.199424.exe"
-          },
-          {
-            "label": "PM981A驱动",
-            "downloadUrl": "https://www.samsung.com/semiconductor/minisite/ssd/download/tools/"
-          },
-          {
-            "label": "Steam",
-            "downloadUrl": "https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe"
-          },
-          {
-            "label": "uTools",
-            "downloadUrl": "https://www.u.tools/"
-          },
-          {
-            "label": "百度网盘",
-            "downloadUrl": "http://pan.baidu.com/download"
-          },
-          {
-            "label": "阿里云盘",
-            "downloadUrl": "https://www.aliyundrive.com/download"
-          },
-          {
-            "label": "战网",
-            "downloadUrl": "https://www.battlenet.com.cn/download/getInstaller?os=win&installer=Battle.net-Setup-CN.exe"
-          },
-          {
-            "label": "Epic",
-            "downloadUrl": "https://www.epicgames.com/shadowcomplex/download"
-          },
-          {
-            "label": "比特彗星",
-            "downloadUrl": "https://www.lanzoux.com/b073c7g4f"
-          },
-          {
-            "label": "有道词典",
-            "downloadUrl": "http://codown.youdao.com/cidian/YoudaoDict_webdict_default.exe"
-          },
-          {
-            "label": "微信",
-            "downloadUrl": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe"
-          },
-          {
-            "label": "图吧工具箱",
-            "downloadUrl": "http://www.tbtool.cn/"
-          },
-          {
-            "label": "截图工具",
-            "downloadUrl": "https://www.snipaste.com/"
-          },
-          {
-            "label": "TrafficMonitor",
-            "downloadUrl": "https://github.com/zhongyang219/TrafficMonitor"
-          },
-          {
-            "label": "Clash",
-            "downloadUrl": "https://github.com/Fndroid/clash_for_windows_pkg"
-          },
-          {
-            "label": "B站下载器",
-            "downloadUrl": "https://www.52pojie.cn/thread-1450767-1-1.html"
-          },
-          {
-            "label": "StartIsBack",
-            "downloadUrl": "https://s3.amazonaws.com/startisback/StartIsBackPlusPlus_setup.exe"
-          },
-          {
-            "label": "风灵月影",
-            "downloadUrl": "https://soft.qwp365.cn/soft/FLiNGTrainer_setup.exe"
-          },
-          {
-            "label": "罗技摄像头驱动",
-            "downloadUrl": "https://www.logitech.com.cn/zh-cn/product/capture"
-          },
-          {
-            "label": "雷云",
-            "downloadUrl": "http://cn.razerzone.com/synapse-3"
-          },
-          {
-            "label": "Github Desktop",
-            "downloadUrl": "https://desktop.github.com/"
-          },
-          {
-            "label": "Github Desktop——汉化补丁",
-            "downloadUrl": "https://github.com/lkyero/GitHubDesktop_zh/releases"
-          },
-          {
-            "label": "火绒弹窗拦截5.0.62.4",
-            "downloadUrl": "https://free.lanzoui.com/imWPts2npha"
-          },
-          {
-            "label": "鸿蒙字体",
-            "downloadUrl": "https://developer.harmonyos.com/cn/docs/design/des-resources/general-0000001157315901"
-          },
-          {
-            "label": "JetBrains Mono字体",
-            "downloadUrl": "https://github.com/JetBrains/JetBrainsMono/releases"
-          },
-          {
-            "label": "傲梅分区助手 （使用码：1122）",
-            "downloadUrl": "https://www2.aomeisoftware.com/download/pacn/PAInstall.zip"
-          },
-          {
-            "label": "PowerShell",
-            "downloadUrl": "https://github.com/PowerShell/PowerShell/releases"
-          },
-          {
-            "label": "Photoshop （提取码：3jek 解压密码：@vposy）",
-            "downloadUrl": "https://pan.baidu.com/s/1cv6mg9ycFSinHnPoOzCgrA?"
-          }
+          "label": "Bandizip",
+          "downloadUrl": "https://cn.bandisoft.com/bandizip/dl.php?old"
+        },
+        {
+          "label": "Bandizip——图标（提取码：8axa）",
+          "downloadUrl": "https://wwi.lanzouv.com/ioFKY00i0rub"
+        },
+        {
+          "label": "搜狗输入法",
+          "downloadUrl": "https://pinyin.sogou.com/"
+        },
+        {
+          "label": "卡巴斯基",
+          "downloadUrl": "https://www.kaspersky.com.cn/downloads/thank-you/internet-security-free-trial#download"
+        },
+        {
+          "label": "迅雷X",
+          "downloadUrl": "http://down.sandai.net/thunderx/XunLeiSetup10.1.38.890.exe"
+        },
+        {
+          "label": "迅雷——落尘之木补丁",
+          "downloadUrl": "https://dl.luochenzhimu.com/software/Thunder/ThunderX/ThunderX_10.1.38.890.zip"
+        },
+        {
+          "label": "蜂巢客户端",
+          "downloadUrl": "https://666yun.men/app/Bee-win4.1.2.zip"
+        },
+        {
+          "label": "QQ",
+          "downloadUrl": "https://im.qq.com/pcqq/"
+        },
+        {
+          "label": "Chrome",
+          "downloadUrl": "https://www.google.cn/chrome/?standalone=1&platform=win64"
+        },
+        {
+          "label": "everything",
+          "downloadUrl": "https://www.voidtools.com/zh-cn/"
+        },
+        {
+          "label": "Git",
+          "downloadUrl": "https://npm.taobao.org/mirrors/git-for-windows/"
+        },
+        {
+          "label": "罗技驱动",
+          "downloadUrl": "https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe"
+        },
+        {
+          "label": ".NET Framework",
+          "downloadUrl": "https://dotnet.microsoft.com/download/dotnet-framework"
+        },
+        {
+          "label": "Office",
+          "downloadUrl": "https://otp.landian.vip/zh-cn/download.html"
+        },
+        {
+          "label": "微软C++运行库",
+          "downloadUrl": "https://www.lanzoui.com/iJGF5pzdmid"
+        },
+        {
+          "label": "VS Code",
+          "downloadUrl": "https://code.visualstudio.com/"
+        },
+        {
+          "label": "MSI Afterburner",
+          "downloadUrl": "http://download-cn.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip"
+        },
+        {
+          "label": "Node",
+          "downloadUrl": "https://nodejs.org/zh-cn/"
+        },
+        {
+          "label": "NVIDIA显卡驱动",
+          "downloadUrl": "https://www.nvidia.cn/Download/index.aspx?lang=cn"
+        },
+        {
+          "label": "Potplayer",
+          "downloadUrl": "https://potplayer.org/"
+        },
+        {
+          "label": "QQ音乐",
+          "downloadUrl": "https://dldir1.qq.com/music/clntupate/QQMusic_YQQLogin.exe"
+        },
+        {
+          "label": "网易云音乐",
+          "downloadUrl": "https://d1.music.126.net/dmusic/cloudmusicsetup2.9.5.199424.exe"
+        },
+        {
+          "label": "PM981A驱动",
+          "downloadUrl": "https://www.samsung.com/semiconductor/minisite/ssd/download/tools/"
+        },
+        {
+          "label": "Steam",
+          "downloadUrl": "https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe"
+        },
+        {
+          "label": "uTools",
+          "downloadUrl": "https://www.u.tools/"
+        },
+        {
+          "label": "百度网盘",
+          "downloadUrl": "http://pan.baidu.com/download"
+        },
+        {
+          "label": "阿里云盘",
+          "downloadUrl": "https://www.aliyundrive.com/download"
+        },
+        {
+          "label": "Epic",
+          "downloadUrl": "https://www.epicgames.com/shadowcomplex/download"
+        },
+        {
+          "label": "比特彗星",
+          "downloadUrl": "https://www.lanzoux.com/b073c7g4f"
+        },
+        {
+          "label": "有道词典",
+          "downloadUrl": "http://codown.youdao.com/cidian/YoudaoDict_webdict_default.exe"
+        },
+        {
+          "label": "微信",
+          "downloadUrl": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe"
+        },
+        {
+          "label": "图吧工具箱",
+          "downloadUrl": "http://www.tbtool.cn/"
+        },
+        {
+          "label": "截图工具",
+          "downloadUrl": "https://www.snipaste.com/"
+        },
+        {
+          "label": "TrafficMonitor",
+          "downloadUrl": "https://github.com/zhongyang219/TrafficMonitor"
+        },
+        {
+          "label": "Clash",
+          "downloadUrl": "https://github.com/Fndroid/clash_for_windows_pkg"
+        },
+        {
+          "label": "B站下载器",
+          "downloadUrl": "https://www.52pojie.cn/thread-1450767-1-1.html"
+        },
+        {
+          "label": "风灵月影",
+          "downloadUrl": "https://soft.qwp365.cn/soft/FLiNGTrainer_setup.exe"
+        },
+        {
+          "label": "罗技摄像头驱动",
+          "downloadUrl": "https://www.logitech.com.cn/zh-cn/product/capture"
+        },
+        {
+          "label": "Github Desktop",
+          "downloadUrl": "https://desktop.github.com/"
+        },
+        {
+          "label": "Github Desktop——汉化补丁",
+          "downloadUrl": "https://github.com/lkyero/GitHubDesktop_zh/releases"
+        },
+        {
+          "label": "火绒弹窗拦截5.0.62.4",
+          "downloadUrl": "https://free.lanzoui.com/imWPts2npha"
+        },
+        {
+          "label": "鸿蒙字体",
+          "downloadUrl": "https://developer.harmonyos.com/cn/docs/design/des-resources/general-0000001157315901"
+        },
+        {
+          "label": "JetBrains Mono字体",
+          "downloadUrl": "https://github.com/JetBrains/JetBrainsMono/releases"
+        },
+        {
+          "label": "傲梅分区助手 （使用码：1122）",
+          "downloadUrl": "https://www2.aomeisoftware.com/download/pacn/PAInstall.zip"
+        },
+        {
+          "label": "PowerShell",
+          "downloadUrl": "https://github.com/PowerShell/PowerShell/releases"
+        },
+        {
+          "label": "Photoshop （提取码：3jek 解压密码：@vposy）",
+          "downloadUrl": "https://pan.baidu.com/s/1cv6mg9ycFSinHnPoOzCgrA?"
+        }
         ])
 
         // 打开网页
