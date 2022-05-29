@@ -36,7 +36,7 @@
         <div
           class="form_wrapper card_wrapper w-400px flex flex-col p-30px my-0 mx-auto rounded-10px"
         >
-          <div class="mb-24px text-22px flex justify-center">批量下载设置</div>
+          <div class="mb-24px text-22px flex">批量下载设置</div>
           <a-form :model="formData" auto-label-width :disabled="startDownload">
             <a-form-item label="下载起始">
               <a-input-number
