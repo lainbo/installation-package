@@ -212,5 +212,9 @@ export const packageData = [
   {
     label: 'FxSound',
     downloadUrl: 'https://download.fxsound.com/fxsoundlatest'
+  },
+  {
+    label: 'ScreenToGif',
+    downloadUrl: 'https://github.com/NickeManarin/ScreenToGif/releases'
   }
 ]
