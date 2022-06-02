@@ -2,7 +2,7 @@
   <div class="flex flex-col justify-center h-screen">
     <div class="flex px-24px space-x-24px">
       <section
-        class="card_wrapper p-10px flex-1 h-88vh overflow-y-auto rounded-10px bg-white transition-all"
+        class="card_wrapper p-10px w-7/12 h-88vh overflow-y-auto rounded-10px bg-white transition-all scroll-smooth"
       >
         <a-table
           :data="tableData"
@@ -69,17 +69,18 @@
             position="bottom"
             @ok="startBatchDownload"
           >
-            <a-button type="primary">开始下载</a-button>
+            <a-button type="primary">开始批量下载</a-button>
           </a-popconfirm>
-          <a-button v-else type="primary" @click="batchDownload"
-            >继续下载
+          <a-button v-else type="primary" @click="batchDownload">
+            继续下载之后的{{ formData.data.downloadNum }}个链接
           </a-button>
         </div>
         <h2 class="mt-400px flex justify-center">
           <span
-            class="text-80px font-bold text-light-400 select-none text-center"
-            >装机软件下载列表</span
+            class="text-70px font-bold text-light-400 select-none text-center"
           >
+            装机软件下载列表
+          </span>
         </h2>
       </section>
     </div>
