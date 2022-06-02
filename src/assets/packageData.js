@@ -27,7 +27,7 @@ export const packageData = [
   },
   {
     label: '蜂巢客户端',
-    downloadUrl: 'https://666yun.men/app/Beehive/win/BeehiveVPN.exe'
+    downloadUrl: 'https://666yun.men/app/Beehive/win/BeehiveVPN3.exe'
   },
   {
     label: 'QQ',
@@ -208,6 +208,10 @@ export const packageData = [
   {
     label: 'INNO3D TuneIT',
     downloadUrl: 'http://www.inno3d.cc/tunit_ocutility'
+  },
+  {
+    label: 'SvgSee',
+    downloadUrl: 'https://github.com/tibold/svg-explorer-extension/releases'
   },
   {
     label: 'FxSound',
