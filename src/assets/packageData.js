@@ -4,7 +4,7 @@ export const packageData = [
     downloadUrl: 'https://cn.bandisoft.com/bandizip/dl.php?old'
   },
   {
-    label: 'Bandizip——图标（提取码：8axa）',
+    label: 'Bandizip——图标（提取码:8axa）',
     downloadUrl: 'https://wwi.lanzouv.com/ioFKY00i0rub'
   },
   {
@@ -18,12 +18,12 @@ export const packageData = [
   },
   {
     label: '迅雷X',
-    downloadUrl: 'http://down.sandai.net/thunderx/XunLeiSetup10.1.38.890.exe'
+    downloadUrl:
+      'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-44af3f84-786a-4383-9b43-d2bdfa949d80/02c7b872-c1fe-48c5-91a6-ae43052113f2.7z'
   },
   {
-    label: '迅雷——落尘之木补丁',
-    downloadUrl:
-      'https://dl.luochenzhimu.com/software/Thunder/ThunderX/ThunderX_10.1.38.890.zip'
+    label: '迅雷——落尘之木补丁（提取码:3bd7）',
+    downloadUrl: 'https://wwi.lanzoup.com/ioqii05vi7ah'
   },
   {
     label: '蜂巢客户端',
@@ -56,7 +56,7 @@ export const packageData = [
     downloadUrl: 'https://otp.landian.vip/zh-cn/download.html'
   },
   {
-    label: 'Windows激活工具（密码：g0cz）',
+    label: 'Windows激活工具（密码:g0cz）',
     downloadUrl: 'https://wwi.lanzoup.com/iMeB101mj9re'
   },
   {
@@ -178,7 +178,7 @@ export const packageData = [
     downloadUrl: 'https://github.com/JetBrains/JetBrainsMono/releases'
   },
   {
-    label: '傲梅分区助手 （使用码：1122）',
+    label: '傲梅分区助手 （使用码:1122）',
     downloadUrl: 'https://www2.aomeisoftware.com/download/pacn/PAInstall.zip'
   },
   {
@@ -186,11 +186,11 @@ export const packageData = [
     downloadUrl: 'https://github.com/PowerShell/PowerShell/releases'
   },
   {
-    label: 'Photoshop（提取码：3jek 解压密码：@vposy）',
+    label: 'Photoshop（提取码:3jek 解压密码:@vposy）',
     downloadUrl: 'https://pan.baidu.com/s/1cv6mg9ycFSinHnPoOzCgrA?'
   },
   {
-    label: 'Acrobat（提取码：3jek 解压密码：@vposy）',
+    label: 'Acrobat（提取码:3jek 解压密码:@vposy）',
     downloadUrl: 'https://pan.baidu.com/s/1cv6mg9ycFSinHnPoOzCgrA?'
   },
   {
