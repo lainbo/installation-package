@@ -4,8 +4,12 @@ export const packageData = [
     downloadUrl: 'https://cn.bandisoft.com/bandizip/dl.php?old'
   },
   {
-    label: 'Bandizip——图标（提取码:8axa）',
-    downloadUrl: 'https://wwi.lanzouv.com/ioFKY00i0rub'
+    label: 'Bandizip——图标（提取码:7d5h）',
+    downloadUrl: 'https://wwi.lanzoup.com/ioFKY00i0rub'
+  },
+  {
+    label: 'WinRAR（提取码:7yat）',
+    downloadUrl: 'https://wwi.lanzoup.com/ixV4o0c0ukib'
   },
   {
     label: '搜狗输入法',
@@ -26,8 +30,8 @@ export const packageData = [
     downloadUrl: 'https://wwi.lanzoup.com/ioqii05vi7ah'
   },
   {
-    label: '蜂巢客户端',
-    downloadUrl: 'https://666yun.men/app/Beehive/win/BeehiveVPN3.exe'
+    label: 'GitHub加速（提取码:5wbe）',
+    downloadUrl: 'https://wwi.lanzoup.com/iroxs0c0v1rc'
   },
   {
     label: 'QQ',

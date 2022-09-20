@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col justify-center h-screen">
-    <div class="flex px-24px space-x-24px">
+  <div class="flex h-screen">
+    <div class="flex px-24px pt-36px space-x-24px w-full">
       <section
-        class="card_wrapper p-10px w-7/12 h-88vh overflow-y-auto rounded-10px bg-white transition-all scroll-smooth"
+        class="card_wrapper p-10px w-7/12 h-88vh min-h-100% overflow-y-auto rounded-10px bg-white transition-all scroll-smooth"
       >
         <a-table
           :data="tableData"
