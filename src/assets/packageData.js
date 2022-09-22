@@ -190,12 +190,12 @@ export const packageData = [
     downloadUrl: 'https://github.com/PowerShell/PowerShell/releases'
   },
   {
-    label: 'Photoshop（提取码:3jek 解压密码:@vposy）',
-    downloadUrl: 'https://pan.baidu.com/s/1cv6mg9ycFSinHnPoOzCgrA?'
+    label: 'Photoshop（提取码:t9i6 解压密码:@vposy）',
+    downloadUrl: 'https://pan.baidu.com/s/1oRo8nnNLYORLGOISiTQYYw'
   },
   {
-    label: 'Acrobat（提取码:3jek 解压密码:@vposy）',
-    downloadUrl: 'https://pan.baidu.com/s/1cv6mg9ycFSinHnPoOzCgrA?'
+    label: 'Acrobat（提取码:t9i6 解压密码:@vposy）',
+    downloadUrl: 'https://pan.baidu.com/s/1oRo8nnNLYORLGOISiTQYYw'
   },
   {
     label: 'ToDesk',

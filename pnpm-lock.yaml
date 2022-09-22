@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@arco-design/web-vue': ^2.37.1
+  '@arco-design/web-vue': ^2.37.2
   '@vitejs/plugin-vue': ^3.1.0
   '@vue/eslint-config-prettier': ^7.0.0
   '@vueuse/core': ^9.2.0
@@ -10,8 +10,8 @@ specifiers:
   eslint-plugin-vue: ^9.5.1
   lodash-es: ^4.17.21
   prettier: ^2.7.1
-  sass: ^1.54.9
-  taze: ^0.8.0
+  sass: ^1.55.0
+  taze: ^0.8.1
   terser: ^5.15.0
   unplugin-auto-import: ^0.11.2
   unplugin-vue-components: ^0.22.7
@@ -26,26 +26,26 @@ dependencies:
   vue: 3.2.39
 
 devDependencies:
-  '@arco-design/web-vue': 2.37.1_vue@3.2.39
+  '@arco-design/web-vue': 2.37.2_vue@3.2.39
   '@vitejs/plugin-vue': 3.1.0_vite@3.1.3+vue@3.2.39
   '@vue/eslint-config-prettier': 7.0.0_fqyzhpusvewbsl54pqqbxqaegm
   eslint: 7.32.0
   eslint-plugin-prettier: 4.2.1_fqyzhpusvewbsl54pqqbxqaegm
   eslint-plugin-vue: 9.5.1_eslint@7.32.0
   prettier: 2.7.1
-  sass: 1.54.9
-  taze: 0.8.0
+  sass: 1.55.0
+  taze: 0.8.1
   terser: 5.15.0
   unplugin-auto-import: 0.11.2_ddncce744ormlo74xpe4fre3qq
   unplugin-vue-components: 0.22.7_vite@3.1.3+vue@3.2.39
-  vite: 3.1.3_sass@1.54.9+terser@5.15.0
+  vite: 3.1.3_sass@1.55.0+terser@5.15.0
   vite-plugin-windicss: 1.8.8_vite@3.1.3
   windicss: 3.5.6
 
 packages:
 
-  /@antfu/ni/0.16.3:
-    resolution: {integrity: sha512-/C1N/hORSJp1qJHr4oRqQzmWPqB6S42T4HV4dWhXOllPJkcqQA/L40U55Oc7Gq4Gm9pLeCNZn7YYU1kUK2Ekpg==}
+  /@antfu/ni/0.18.0:
+    resolution: {integrity: sha512-D0eek5EV8wOUpZNVAs/mPyeC5TMWFXqchqCyPiR6Lj5FgmSJw0EpFLqAczHX0O5+Jc07N7NBwBip85Gi1MBJnA==}
     hasBin: true
     dev: true
 
@@ -59,8 +59,8 @@ packages:
       color: 3.2.1
     dev: true
 
-  /@arco-design/web-vue/2.37.1_vue@3.2.39:
-    resolution: {integrity: sha512-lRilS1pEBvf8oa1tja4354FRY/GhTSEE+VycVxjA0DLdAj5f4gTBdK1poaDgTXABxMhp/LwUvXlhb6aRvKdVnw==}
+  /@arco-design/web-vue/2.37.2_vue@3.2.39:
+    resolution: {integrity: sha512-qhCUNaKb+wXY+PC3Q70fEeZ/gT5oVPK9WpCqpCT6peMj0RrXuQJtUPNebQwnjQtMyWT8OIWcuYwl5/9vIlJodw==}
     peerDependencies:
       vue: ^3.1.0
     dependencies:
@@ -313,7 +313,7 @@ packages:
       vite: ^3.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 3.1.3_sass@1.54.9+terser@5.15.0
+      vite: 3.1.3_sass@1.55.0+terser@5.15.0
       vue: 3.2.39
     dev: true
 
@@ -2378,8 +2378,8 @@ packages:
     dev: true
     optional: true
 
-  /sass/1.54.9:
-    resolution: {integrity: sha512-xb1hjASzEH+0L0WI9oFjqhRi51t/gagWnxLiwUNMltA0Ab6jIDkAacgKiGYKM9Jhy109osM7woEEai6SXeJo5Q==}
+  /sass/1.55.0:
+    resolution: {integrity: sha512-Pk+PMy7OGLs9WaxZGJMn7S96dvlyVBwwtToX895WmCpAOr5YiJYEUJfiJidMuKb613z2xNWcXCHEuOvjZbqC6A==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -2595,11 +2595,11 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /taze/0.8.0:
-    resolution: {integrity: sha512-3FWGegvt1JB+qfBPEr/9sBhGc2VQmwrGFacvfCllmm+Raw9iDHlWSy/CyIJU+6FsfUrTIhF5X9xT2sUNh4nz8Q==}
+  /taze/0.8.1:
+    resolution: {integrity: sha512-W2ZOGYiH57GFM38gBVE1pMV3TDExuqwqETdWh8xGeAOMMWwSUt6NWZnHw7c1AMhaC8abCikjXe1s2H43h5CieA==}
     hasBin: true
     dependencies:
-      '@antfu/ni': 0.16.3
+      '@antfu/ni': 0.18.0
       detect-indent: 7.0.1
       libnpmconfig: 1.2.1
       pacote: 13.6.2
@@ -2767,7 +2767,7 @@ packages:
     dependencies:
       acorn: 8.8.0
       chokidar: 3.5.3
-      vite: 3.1.3_sass@1.54.9+terser@5.15.0
+      vite: 3.1.3_sass@1.55.0+terser@5.15.0
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.4.5
     dev: true
@@ -2808,13 +2808,13 @@ packages:
       '@windicss/plugin-utils': 1.8.8
       debug: 4.3.4
       kolorist: 1.5.1
-      vite: 3.1.3_sass@1.54.9+terser@5.15.0
+      vite: 3.1.3_sass@1.55.0+terser@5.15.0
       windicss: 3.5.6
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/3.1.3_sass@1.54.9+terser@5.15.0:
+  /vite/3.1.3_sass@1.55.0+terser@5.15.0:
     resolution: {integrity: sha512-/3XWiktaopByM5bd8dqvHxRt5EEgRikevnnrpND0gRfNkrMrPaGGexhtLCzv15RcCMtV2CLw+BPas8YFeSG0KA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -2837,7 +2837,7 @@ packages:
       postcss: 8.4.16
       resolve: 1.22.1
       rollup: 2.78.1
-      sass: 1.54.9
+      sass: 1.55.0
       terser: 5.15.0
     optionalDependencies:
       fsevents: 2.3.2
