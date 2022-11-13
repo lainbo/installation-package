@@ -15,18 +15,18 @@ export default defineConfig({
       eslintrc: {
         enabled: true,
         filepath: './.eslintrc-auto-import.json',
-        globalsPropValue: true
+        globalsPropValue: true,
       },
-      imports: ['vue', '@vueuse/core']
+      imports: ['vue', '@vueuse/core'],
     }),
     Components({
-      resolvers: [ArcoResolver()]
-    })
+      resolvers: [ArcoResolver()],
+    }),
   ],
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src')
-    }
+      '@': resolve(__dirname, './src'),
+    },
   },
   build: {
     assetsInlineLimit: 4096,
@@ -36,8 +36,8 @@ export default defineConfig({
     terserOptions: {
       compress: {
         drop_console: true,
-        drop_debugger: true
-      }
-    }
-  }
+        drop_debugger: true,
+      },
+    },
+  },
 })
