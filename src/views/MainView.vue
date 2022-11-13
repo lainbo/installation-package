@@ -1,8 +1,8 @@
 <template>
   <div class="flex h-screen">
-    <div class="flex px-24px pt-36px space-x-24px w-full">
+    <div class="flex px-24px pt-32px pb-48px space-x-24px w-full lt-xl:p-0">
       <section
-        class="card_wrapper p-10px w-7/12 h-88vh min-h-100% overflow-y-auto rounded-10px bg-white transition-all scroll-smooth"
+        class="card_wrapper p-10px w-7/12 h-full overflow-y-auto rounded-10px bg-white transition-all scroll-smooth lt-xl:(rounded-none !shadow-none !border-y-none !border-l-none)"
       >
         <a-table
           :data="tableData"
@@ -17,9 +17,7 @@
               <template #cell="{ record }">
                 <a-button
                   long
-                  :type="
-                    activeIndex.includes(record.index) ? 'primary' : 'outline'
-                  "
+                  :type="activeIndex.includes(record.index) ? 'primary' : 'outline'"
                   status="success"
                   size="small"
                   @click="goUrl(record)"
@@ -32,9 +30,9 @@
         </a-table>
       </section>
 
-      <section class="flex-1 relative">
+      <section class="flex-1 relative lt-xl:(flex items-center pr-16px)">
         <div
-          class="form_wrapper card_wrapper w-400px flex flex-col p-30px my-0 mx-auto rounded-10px"
+          class="card_wrapper w-400px transition-all flex flex-col p-30px my-0 mx-auto rounded-10px lt-xl:( w-320px)"
         >
           <div class="mb-24px text-22px flex">批量下载设置</div>
           <a-form :model="formData" auto-label-width :disabled="startDownload">
@@ -75,10 +73,8 @@
             继续下载之后的{{ formData.data.downloadNum }}个链接
           </a-button>
         </div>
-        <h2 class="mt-400px flex justify-center">
-          <span
-            class="text-70px font-bold text-light-400 select-none text-center"
-          >
+        <h2 class="mt-400px flex justify-center lt-xl:hidden">
+          <span class="text-70px font-bold text-light-400 select-none text-center">
             装机软件下载列表
           </span>
         </h2>
@@ -88,19 +84,19 @@
 </template>
 
 <script setup>
-import { packageData } from '@/assets/packageData.js'
+import packageData from '@/assets/packageData.json'
 import { chunk } from 'lodash-es'
 const formData = reactive({
   data: {
     fromNum: 1,
-    downloadNum: 5
-  }
+    downloadNum: 5,
+  },
 })
 const tableData = ref(
   (packageData || []).map((item, index) => {
     return {
       ...item,
-      index: index + 1
+      index: index + 1,
     }
   })
 )
