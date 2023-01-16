@@ -11,3 +11,30 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #b6b7b9;
 }
+
+@font-face {
+  font-display: swap;
+  font-family: 'HarmonyOS';
+  src: url('https://efadmin.netlify.app/font/HarmonyOS_Sans_Regular.woff2')
+    format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  src: url('https://efadmin.netlify.app/font/Inter-Regular.woff2') format('woff2');
+}
+
+html,
+body {
+  font-family: 'Inter', 'HarmonyOS Sans SC', 'HarmonyOS', system-ui, —apple-system,
+    Segoe UI, Rototo, Helvetica, Arial, sans-serif !important;
+}
+
+.dark ::selection {
+  background-color: #686868;
+}
+::selection {
+  background-color: #165dff;
+  color: #fff;
+}
