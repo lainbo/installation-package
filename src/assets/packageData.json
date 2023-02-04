@@ -20,6 +20,10 @@
     "downloadUrl": "https://www.kaspersky.com.cn/downloads/thank-you/internet-security-free-trial#download"
   },
   {
+    "label": "迅雷11",
+    "downloadUrl": "https://xl11.xunlei.com/"
+  },
+  {
     "label": "迅雷X",
     "downloadUrl": "http://down.sandai.net/thunderx/XunLeiSetup10.1.38.890.exe"
   },
@@ -148,12 +152,8 @@
     "downloadUrl": "https://www.52pojie.cn/thread-1450767-1-1.html"
   },
   {
-    "label": "wemod",
+    "label": "WeMod",
     "downloadUrl": "https://www.wemod.com/zh/download"
-  },
-  {
-    "label": "罗技摄像头驱动",
-    "downloadUrl": "https://www.logitech.com.cn/zh-cn/product/capture"
   },
   {
     "label": "Github Desktop",
@@ -161,7 +161,7 @@
   },
   {
     "label": "Github Desktop汉化工具",
-    "downloadUrl": "https://github.com/robotze/-GitHubDesktop_ZH/releases"
+    "downloadUrl": "https://github.com/robotze/GithubDesktopZhTool/releases"
   },
   {
     "label": "火绒弹窗拦截5.0.62.4",
