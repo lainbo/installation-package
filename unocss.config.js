@@ -6,6 +6,7 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import presetWebFonts from '@unocss/preset-web-fonts'
 export default defineConfig({
   shortcuts: [
     {
@@ -18,6 +19,12 @@ export default defineConfig({
   presets: [
     presetWind(),
     presetAttributify(),
+    presetWebFonts({
+      fonts: {
+        provider: 'bunny',
+        Inter: [{ name: 'Inter' }],
+      },
+    }),
     presetIcons({
       warn: true,
       extraProperties: {

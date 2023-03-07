@@ -1,3 +1,5 @@
+@use '@/styles/online_harmony_fonts.css';
+
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
@@ -12,23 +14,11 @@
   background: #b6b7b9;
 }
 
-@font-face {
-  font-display: swap;
-  font-family: 'HarmonyOS';
-  src: url('https://efadmin.netlify.app/font/HarmonyOS_Sans_Regular.woff2')
-    format('woff2');
-}
-
-@font-face {
-  font-display: swap;
-  font-family: 'Inter';
-  src: url('https://efadmin.netlify.app/font/Inter-Regular.woff2') format('woff2');
-}
-
 html,
 body {
-  font-family: 'Inter', 'HarmonyOS Sans SC', 'HarmonyOS', system-ui, —apple-system,
-    Segoe UI, Rototo, Helvetica, Arial, sans-serif !important;
+  font-family: 'Inter', 'HarmonyOS Sans SC', 'HarmonyOS_Regular', 'Noto Sans KR',
+    'Noto Sans Thai', 'Noto Sans SC', system-ui, Segoe UI, Rototo, Helvetica, Arial,
+    sans-serif !important;
 }
 
 .dark ::selection {
