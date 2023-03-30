@@ -136,6 +136,10 @@
     "downloadUrl": "https://github.com/zhongyang219/TrafficMonitor"
   },
   {
+    "label": "v2rayN",
+    "downloadUrl": "https://github.com/2dust/v2rayN/releases"
+  },
+  {
     "label": "Clash",
     "downloadUrl": "https://github.com/Fndroid/clash_for_windows_pkg"
   },
