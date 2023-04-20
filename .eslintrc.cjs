@@ -11,6 +11,7 @@ module.exports = {
     'eslint:recommended',
     '@vue/prettier',
     './.eslintrc-auto-import.json',
+    '@unocss',
   ],
   rules: {
     'vue/custom-event-name-casing': [2, 'camelCase'], // vue的自定义事件名必须是小驼峰

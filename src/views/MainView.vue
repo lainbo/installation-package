@@ -1,8 +1,8 @@
 <template>
-  <div class="flex h-screen">
-    <div class="flex px-24px pt-32px pb-48px space-x-24px w-full lt-xl:p-0">
+  <div class="h-screen flex">
+    <div class="w-full flex px-24px pb-48px pt-32px space-x-24px lt-xl:p-0">
       <section
-        class="card_wrapper p-10px w-7/12 h-full overflow-y-auto rounded-10px bg-white transition-all scroll-smooth lt-xl:(rounded-none !shadow-none !border-y-none !border-l-none)"
+        class="card_wrapper h-full w-7/12 overflow-y-auto scroll-smooth rounded-10px bg-white p-10px transition-all lt-md:(w-full) lt-xl:(rounded-none) !lt-xl:border-y-none !lt-xl:border-l-none !lt-xl:shadow-none"
       >
         <a-table
           :data="tableData"
@@ -15,26 +15,29 @@
             <a-table-column data-index="label"></a-table-column>
             <a-table-column :width="110">
               <template #cell="{ record }">
-                <a-button
-                  long
-                  :type="activeIndex.includes(record.index) ? 'primary' : 'outline'"
-                  status="success"
-                  size="small"
+                <a
+                  class="btn flex-c border rounded-2px px-16px py-2px text-#fff transition-all"
+                  :class="
+                    activeIndex.includes(record.index) ? 'btn_primary' : 'btn_normal'
+                  "
+                  target="_blank"
+                  :href="record.downloadUrl"
                   @click="goUrl(record)"
+                  @click.middle="goUrl(record)"
                 >
                   下载
-                </a-button>
+                </a>
               </template>
             </a-table-column>
           </template>
         </a-table>
       </section>
 
-      <section class="flex-1 relative lt-xl:(flex items-center pr-16px)">
+      <section class="relative flex-1 lt-md:(hidden) lt-xl:(flex items-center pr-16px)">
         <div
-          class="card_wrapper w-400px transition-all flex flex-col p-30px my-0 mx-auto rounded-10px lt-xl:( w-320px)"
+          class="card_wrapper mx-auto my-0 w-400px flex flex-col rounded-10px p-30px transition-all lt-xl:(w-320px)"
         >
-          <div class="mb-24px text-22px flex">批量下载设置</div>
+          <div class="mb-24px flex text-22px">批量下载设置</div>
           <a-form :model="formData" auto-label-width :disabled="startDownload">
             <a-form-item label="下载起始">
               <a-input-number
@@ -74,7 +77,7 @@
           </a-button>
         </div>
         <h2 class="mt-400px flex justify-center lt-xl:hidden">
-          <span class="text-70px font-bold text-light-400 select-none text-center">
+          <span class="select-none text-center text-70px font-bold text-light-400">
             装机软件下载列表
           </span>
         </h2>
@@ -143,7 +146,7 @@ function downloadCompleted() {
 // 打开链接
 function goUrl(row) {
   activeIndex.value = [row.index]
-  open(row.downloadUrl)
+  // open(row.downloadUrl)
 }
 </script>
 
@@ -156,5 +159,36 @@ function goUrl(row) {
     22.3px 22.3px 17.9px -4px rgba(0, 0, 0, 0.042),
     41.8px 41.8px 33.4px -4px rgba(0, 0, 0, 0.05),
     100px 100px 80px -4px rgba(0, 0, 0, 0.07);
+}
+.btn {
+  --lightGreen: #23c343;
+  --darkGreen: #009a29;
+  --green: #00b42a;
+  border: 1px solid transparent;
+}
+.btn_primary {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+  &:hover {
+    background: var(--lightGreen);
+    border-color: var(--lightGreen);
+  }
+  &:active {
+    background: var(--darkGreen);
+    border-color: var(--darkGreen);
+  }
+}
+.btn_normal {
+  border-color: var(--green);
+  color: var(--green);
+  &:hover {
+    border-color: var(--lightGreen);
+    color: var(--lightGreen);
+  }
+  &:active {
+    border-color: var(--darkGreen);
+    color: var(--darkGreen);
+  }
 }
 </style>
