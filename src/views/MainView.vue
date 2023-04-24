@@ -2,35 +2,49 @@
   <div class="h-screen flex">
     <div class="w-full flex px-24px pb-48px pt-32px space-x-24px lt-xl:p-0">
       <section
-        class="card_wrapper h-full w-7/12 overflow-y-auto scroll-smooth rounded-10px bg-white p-10px transition-all lt-md:(w-full) lt-xl:(rounded-none) !lt-xl:border-y-none !lt-xl:border-l-none !lt-xl:shadow-none"
+        class="card_wrapper relative h-full w-7/12 flex flex-col rounded-10px bg-white p-10px transition-all lt-md:(w-full) lt-xl:(rounded-none) !lt-xl:border-y-none !lt-xl:border-l-none !lt-xl:shadow-none"
       >
-        <a-table
-          :data="tableData"
-          :pagination="false"
-          :show-header="false"
-          :bordered="false"
+        <div class="mb-8px">
+          <a-input
+            ref="搜索框Ref"
+            v-model="searchText"
+            class="transition-all"
+            placeholder="搜索"
+            allow-clear
+          ></a-input>
+        </div>
+        <div
+          class="flex-1 overflow-y-auto scroll-smooth"
+          style="scrollbar-gutter: stable"
         >
-          <template #columns>
-            <a-table-column data-index="index" :width="50"></a-table-column>
-            <a-table-column data-index="label"></a-table-column>
-            <a-table-column :width="110">
-              <template #cell="{ record }">
-                <a
-                  class="btn flex-c border rounded-2px px-16px py-2px text-#fff transition-all"
-                  :class="
-                    activeIndex.includes(record.index) ? 'btn_primary' : 'btn_normal'
-                  "
-                  target="_blank"
-                  :href="record.downloadUrl"
-                  @click="goUrl(record)"
-                  @click.middle="goUrl(record)"
-                >
-                  下载
-                </a>
-              </template>
-            </a-table-column>
-          </template>
-        </a-table>
+          <a-table
+            :data="calcTableData"
+            :pagination="false"
+            :show-header="false"
+            :bordered="false"
+          >
+            <template #columns>
+              <a-table-column data-index="index" :width="50"></a-table-column>
+              <a-table-column data-index="label"></a-table-column>
+              <a-table-column :width="110">
+                <template #cell="{ record }">
+                  <a
+                    class="btn flex-c border rounded-2px px-16px py-2px text-#fff transition-all"
+                    :class="
+                      activeIndex.includes(record.index) ? 'btn_primary' : 'btn_normal'
+                    "
+                    target="_blank"
+                    :href="record.downloadUrl"
+                    @click="goUrl(record)"
+                    @click.middle="goUrl(record)"
+                  >
+                    下载
+                  </a>
+                </template>
+              </a-table-column>
+            </template>
+          </a-table>
+        </div>
       </section>
 
       <section class="relative flex-1 lt-md:(hidden) lt-xl:(flex items-center pr-16px)">
@@ -44,7 +58,7 @@
                 v-model="formData.data.fromNum"
                 :style="{ width: '100%' }"
                 :min="1"
-                :max="tableData.length"
+                :max="calcTableData.length"
                 hide-button
               >
                 <template #prefix> 从第 </template>
@@ -56,7 +70,7 @@
                 v-model="formData.data.downloadNum"
                 :style="{ width: '100%' }"
                 :min="1"
-                :max="tableData.length"
+                :max="calcTableData.length"
                 hide-button
               >
                 <template #prefix> 每次 </template>
@@ -70,7 +84,7 @@
             position="bottom"
             @ok="startBatchDownload"
           >
-            <a-button type="primary">开始批量下载</a-button>
+            <a-button type="primary" :disabled="!!searchText">开始批量下载</a-button>
           </a-popconfirm>
           <a-button v-else type="primary" @click="batchDownload">
             继续下载之后的{{ formData.data.downloadNum }}个链接
@@ -89,6 +103,11 @@
 <script setup>
 import packageData from '@/assets/packageData.json'
 import { chunk } from 'lodash-es'
+const searchText = ref('')
+const 搜索框Ref = ref()
+onMounted(() => {
+  搜索框Ref.value.focus()
+})
 const formData = reactive({
   data: {
     fromNum: 1,
@@ -104,6 +123,17 @@ const tableData = ref(
   })
 )
 
+// 文字转小写并去除所有空格
+function handleText(str = '') {
+  return str.toLowerCase().replaceAll(' ', '')
+}
+
+const calcTableData = computed(() => {
+  return tableData.value.filter(item => {
+    return handleText(item.label).includes(handleText(searchText.value))
+  })
+})
+
 const activeIndex = ref([0]) // 需要高亮的行
 const startDownload = ref(false) // 是否开始下载
 
@@ -112,7 +142,7 @@ const currentDownLoadIndex = ref(0) // 当前下载到第几组
 // 动态下载数据分组
 // 二维数组，根据form表单数据动态分出多组数据
 const downLoadArr = computed(() => {
-  const arr = tableData.value.slice(formData.data.fromNum - 1)
+  const arr = calcTableData.value.slice(formData.data.fromNum - 1)
   return chunk(arr, formData.data.downloadNum)
 })
 
@@ -146,8 +176,27 @@ function downloadCompleted() {
 // 打开链接
 function goUrl(row) {
   activeIndex.value = [row.index]
-  // open(row.downloadUrl)
 }
+
+watch(searchText, (newVal, oldVal) => {
+  if (!!oldVal && !newVal) {
+    formData.data = {
+      fromNum: 1,
+      downloadNum: 5,
+    }
+  }
+})
+
+const { ctrl_f } = useMagicKeys({
+  passive: false,
+  onEventFired(e) {
+    if (e.ctrlKey && e.key === 'f' && e.type === 'keydown') e.preventDefault()
+  },
+})
+
+whenever(ctrl_f, () => {
+  搜索框Ref.value.focus()
+})
 </script>
 
 <style lang="scss" scoped>
