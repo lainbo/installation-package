@@ -8,6 +8,10 @@
     "downloadUrl": "https://wwi.lanzoup.com/ioFKY00i0rub"
   },
   {
+    "label": "StartAllBack",
+    "downloadUrl": "https://www.startallback.com/download.php"
+  },
+  {
     "label": "WinRAR（提取码:7yat）",
     "downloadUrl": "https://wwi.lanzoup.com/ixV4o0c0ukib"
   },
@@ -24,20 +28,12 @@
     "downloadUrl": "https://xl11.xunlei.com/"
   },
   {
-    "label": "迅雷X",
-    "downloadUrl": "http://down.sandai.net/thunderx/XunLeiSetup10.1.38.890.exe"
-  },
-  {
-    "label": "迅雷——落尘之木补丁（提取码:3bd7）",
-    "downloadUrl": "https://wwi.lanzoup.com/ioqii05vi7ah"
-  },
-  {
     "label": "QQ",
     "downloadUrl": "https://im.qq.com/pcqq/"
   },
   {
     "label": "Windows激活工具",
-    "downloadUrl": "https://github.com/zbezj/HEU_KMS_Activator/releases"
+    "downloadUrl": "https://github.com/zbezj/HEU_KMS_Activator/releases/latest"
   },
   {
     "label": "Chrome",
@@ -73,7 +69,7 @@
   },
   {
     "label": "nvm",
-    "downloadUrl": "https://github.com/coreybutler/nvm-windows/releases"
+    "downloadUrl": "https://github.com/coreybutler/nvm-windows/releases/latest"
   },
   {
     "label": "NVIDIA显卡驱动",
@@ -96,10 +92,6 @@
     "downloadUrl": "https://www.samsung.com/semiconductor/minisite/ssd/download/tools/"
   },
   {
-    "label": "Steam",
-    "downloadUrl": "https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe"
-  },
-  {
     "label": "uTools",
     "downloadUrl": "https://www.u.tools/"
   },
@@ -110,6 +102,14 @@
   {
     "label": "阿里云盘",
     "downloadUrl": "https://www.aliyundrive.com/download"
+  },
+  {
+    "label": "夸克网盘",
+    "downloadUrl": "https://pan.quark.cn/"
+  },
+  {
+    "label": "Steam",
+    "downloadUrl": "https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe"
   },
   {
     "label": "Epic",
@@ -140,20 +140,12 @@
     "downloadUrl": "https://github.com/zhongyang219/TrafficMonitor"
   },
   {
-    "label": "v2rayN",
-    "downloadUrl": "https://github.com/2dust/v2rayN/releases"
-  },
-  {
-    "label": "Clash",
-    "downloadUrl": "https://github.com/Fndroid/clash_for_windows_pkg"
-  },
-  {
-    "label": "Clash汉化",
-    "downloadUrl": "https://github.com/BoyceLig/Clash_Chinese_Patch/releases"
+    "label": "Clash Verge",
+    "downloadUrl": "https://github.com/zzzgydi/clash-verge/releases/latest"
   },
   {
     "label": "Dism++",
-    "downloadUrl": "https://github.com/Chuyu-Team/Dism-Multi-language/releases"
+    "downloadUrl": "https://github.com/Chuyu-Team/Dism-Multi-language/releases/latest"
   },
   {
     "label": "B站下载器",
@@ -169,7 +161,7 @@
   },
   {
     "label": "Github Desktop汉化工具",
-    "downloadUrl": "https://github.com/robotze/GithubDesktopZhTool/releases"
+    "downloadUrl": "https://github.com/robotze/GithubDesktopZhTool/releases/latest"
   },
   {
     "label": "火绒弹窗拦截5.0.62.4",
@@ -181,11 +173,11 @@
   },
   {
     "label": "JetBrains Mono字体",
-    "downloadUrl": "https://github.com/JetBrains/JetBrainsMono/releases"
+    "downloadUrl": "https://github.com/JetBrains/JetBrainsMono/releases/latest"
   },
   {
-    "label": "所有需要的字体合集",
-    "downloadUrl": "链接：https://pan.baidu.com/s/18Tkm9tV4CtUEw9rO1JhdxQ?pwd=ndzf"
+    "label": "所有需要的字体合集（密码:w1r4）",
+    "downloadUrl": "https://fast.uc.cn/s/998bcaf26d954"
   },
   {
     "label": "傲梅分区助手 （使用码:1122）",
@@ -193,7 +185,7 @@
   },
   {
     "label": "PowerShell",
-    "downloadUrl": "https://github.com/PowerShell/PowerShell/releases"
+    "downloadUrl": "https://github.com/PowerShell/PowerShell/releases/latest"
   },
   {
     "label": "wegt",
@@ -225,7 +217,7 @@
   },
   {
     "label": "SvgSee",
-    "downloadUrl": "https://github.com/tibold/svg-explorer-extension/releases"
+    "downloadUrl": "https://github.com/tibold/svg-explorer-extension/releases/latest"
   },
   {
     "label": "FxSound",

@@ -102,6 +102,7 @@
 
 <script setup>
 import packageData from '@/assets/packageData.json'
+import Fuse from 'fuse.js';
 import { chunk } from 'lodash-es'
 const searchText = ref('')
 const 搜索框Ref = ref()
@@ -123,16 +124,18 @@ const tableData = ref(
   })
 )
 
-// 文字转小写并去除所有空格
-function handleText(str = '') {
-  return str.toLowerCase().replaceAll(' ', '')
-}
+const fuse = new Fuse(tableData.value, {
+  keys: ['label'],
+  includeScore: true,
+  threshold: 0.5,
+});
 
 const calcTableData = computed(() => {
-  return tableData.value.filter(item => {
-    return handleText(item.label).includes(handleText(searchText.value))
-  })
-})
+  if (!searchText.value) {
+    return tableData.value;
+  }
+  return fuse.search(searchText.value).map(result => result.item);
+});
 
 const activeIndex = ref([0]) // 需要高亮的行
 const startDownload = ref(false) // 是否开始下载
