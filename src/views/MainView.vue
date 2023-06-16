@@ -28,18 +28,16 @@
               <a-table-column data-index="label"></a-table-column>
               <a-table-column :width="110">
                 <template #cell="{ record }">
-                  <a
-                    class="btn flex-c border rounded-2px px-16px py-2px text-#fff transition-all"
-                    :class="
-                      activeIndex.includes(record.index) ? 'btn_primary' : 'btn_normal'
-                    "
-                    target="_blank"
-                    :href="record.downloadUrl"
+                  <a-button
+                    long
+                    :type="activeIndex.includes(record.index) ? 'primary' : 'outline'"
+                    status="success"
+                    size="small"
+                    :row-url="record.downloadUrl"
                     @click="goUrl(record)"
-                    @click.middle="goUrl(record)"
                   >
                     下载
-                  </a>
+                  </a-button>
                 </template>
               </a-table-column>
             </template>
@@ -102,8 +100,9 @@
 
 <script setup>
 import packageData from '@/assets/packageData.json'
-import Fuse from 'fuse.js';
+import Fuse from 'fuse.js'
 import { chunk } from 'lodash-es'
+import { Message } from '@arco-design/web-vue'
 const searchText = ref('')
 const 搜索框Ref = ref()
 onMounted(() => {
@@ -128,14 +127,14 @@ const fuse = new Fuse(tableData.value, {
   keys: ['label'],
   includeScore: true,
   threshold: 0.5,
-});
+})
 
 const calcTableData = computed(() => {
   if (!searchText.value) {
-    return tableData.value;
+    return tableData.value
   }
-  return fuse.search(searchText.value).map(result => result.item);
-});
+  return fuse.search(searchText.value).map(result => result.item)
+})
 
 const activeIndex = ref([0]) // 需要高亮的行
 const startDownload = ref(false) // 是否开始下载
@@ -176,9 +175,15 @@ function downloadCompleted() {
   activeIndex.value = []
 }
 
+const { copy } = useClipboard()
 // 打开链接
-function goUrl(row) {
+async function goUrl(row) {
   activeIndex.value = [row.index]
+  if (row.code) {
+    Message.success('已自动复制提取码')
+    await copy(row.code)
+  }
+  open(row.downloadUrl)
 }
 
 watch(searchText, (newVal, oldVal) => {
@@ -211,36 +216,5 @@ whenever(ctrl_f, () => {
     22.3px 22.3px 17.9px -4px rgba(0, 0, 0, 0.042),
     41.8px 41.8px 33.4px -4px rgba(0, 0, 0, 0.05),
     100px 100px 80px -4px rgba(0, 0, 0, 0.07);
-}
-.btn {
-  --lightGreen: #23c343;
-  --darkGreen: #009a29;
-  --green: #00b42a;
-  border: 1px solid transparent;
-}
-.btn_primary {
-  background: var(--green);
-  border-color: var(--green);
-  color: #fff;
-  &:hover {
-    background: var(--lightGreen);
-    border-color: var(--lightGreen);
-  }
-  &:active {
-    background: var(--darkGreen);
-    border-color: var(--darkGreen);
-  }
-}
-.btn_normal {
-  border-color: var(--green);
-  color: var(--green);
-  &:hover {
-    border-color: var(--lightGreen);
-    color: var(--lightGreen);
-  }
-  &:active {
-    border-color: var(--darkGreen);
-    color: var(--darkGreen);
-  }
 }
 </style>
