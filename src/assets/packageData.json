@@ -70,8 +70,8 @@
     "downloadUrl": "http://download-cn.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip"
   },
   {
-    "label": "nvm",
-    "downloadUrl": "https://github.com/coreybutler/nvm-windows/releases/latest"
+    "label": "Volta",
+    "downloadUrl": "https://github.com/volta-cli/volta/releases/latest"
   },
   {
     "label": "NVIDIA显卡驱动",
@@ -140,6 +140,10 @@
   {
     "label": "TrafficMonitor",
     "downloadUrl": "https://github.com/zhongyang219/TrafficMonitor"
+  },
+  {
+    "label": "Clash for Windows",
+    "downloadUrl": "https://github.com/Fndroid/clash_for_windows_pkg/releases/latest"
   },
   {
     "label": "Clash Verge",
