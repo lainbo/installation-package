@@ -146,6 +146,14 @@
     "downloadUrl": "https://github.com/Fndroid/clash_for_windows_pkg/releases/latest"
   },
   {
+    "label": "Upscayl",
+    "downloadUrl": "https://github.com/upscayl/upscayl/releases/latest"
+  },
+  {
+    "label": "noMeiryoUI",
+    "downloadUrl": "https://github.com/Tatsu-syo/noMeiryoUI/releases/latest"
+  },
+  {
     "label": "Clash Verge",
     "downloadUrl": "https://github.com/zzzgydi/clash-verge/releases/latest"
   },
@@ -199,9 +207,8 @@
     "downloadUrl": "https://eternallybored.org/misc/wget/"
   },
   {
-    "label": "Photoshop（提取码:8888 解压密码:@vposy）",
-    "downloadUrl": "https://pan.baidu.com/s/1dTWFMPCeLngxzhGuAhbcUA",
-    "code": "8888"
+    "label": "Adobe Photoshop",
+    "downloadUrl": "https://www.superso.top/Adobe/"
   },
   {
     "label": "SumatraPDF",
@@ -210,6 +217,10 @@
   {
     "label": "ToDesk",
     "downloadUrl": "https://dl.todesk.com/windows/ToDesk_Setup.exe"
+  },
+  {
+    "label": "Xshell",
+    "downloadUrl": "https://www.xshell.com/zh/downloading/?token=d2pyRU1TWURLM2E2ME14Vl90aEI5d0BhbUQ0WnllWmlrYXBSUmNtSGVrRFVB"
   },
   {
     "label": "网易UU加速器",
