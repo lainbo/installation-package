@@ -108,12 +108,6 @@ const searchText = ref('')
 const 搜索框Ref = ref()
 useHead({
   title: '装机软件下载列表',
-  meta: [
-    {
-      name: '123',
-      content: '456456',
-    },
-  ],
 })
 onMounted(() => {
   搜索框Ref.value.focus()
