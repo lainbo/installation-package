@@ -70,8 +70,8 @@
     "downloadUrl": "http://download-cn.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip"
   },
   {
-    "label": "nvm",
-    "downloadUrl": "https://github.com/coreybutler/nvm-windows/releases/latest"
+    "label": "Volta",
+    "downloadUrl": "https://github.com/volta-cli/volta/releases/latest"
   },
   {
     "label": "NVIDIA显卡驱动",
@@ -142,6 +142,18 @@
     "downloadUrl": "https://github.com/zhongyang219/TrafficMonitor"
   },
   {
+    "label": "Clash for Windows",
+    "downloadUrl": "https://github.com/Fndroid/clash_for_windows_pkg/releases/latest"
+  },
+  {
+    "label": "Upscayl",
+    "downloadUrl": "https://github.com/upscayl/upscayl/releases/latest"
+  },
+  {
+    "label": "noMeiryoUI",
+    "downloadUrl": "https://github.com/Tatsu-syo/noMeiryoUI/releases/latest"
+  },
+  {
     "label": "Clash Verge",
     "downloadUrl": "https://github.com/zzzgydi/clash-verge/releases/latest"
   },
@@ -178,9 +190,9 @@
     "downloadUrl": "https://github.com/JetBrains/JetBrainsMono/releases/latest"
   },
   {
-    "label": "所有需要的字体合集（密码:w1r4）",
-    "downloadUrl": "https://fast.uc.cn/s/998bcaf26d954",
-    "code": "w1r4"
+    "label": "所有需要的字体合集（密码:fkHR）",
+    "downloadUrl": "https://fast.uc.cn/s/8114d954f03c4",
+    "code": "fkHR"
   },
   {
     "label": "傲梅分区助手 （使用码:1122）",
@@ -195,9 +207,8 @@
     "downloadUrl": "https://eternallybored.org/misc/wget/"
   },
   {
-    "label": "Photoshop（提取码:8888 解压密码:@vposy）",
-    "downloadUrl": "https://pan.baidu.com/s/1dTWFMPCeLngxzhGuAhbcUA",
-    "code": "8888"
+    "label": "Adobe系列合集",
+    "downloadUrl": "https://www.superso.top/Adobe/"
   },
   {
     "label": "SumatraPDF",
@@ -206,6 +217,10 @@
   {
     "label": "ToDesk",
     "downloadUrl": "https://dl.todesk.com/windows/ToDesk_Setup.exe"
+  },
+  {
+    "label": "Xshell",
+    "downloadUrl": "https://www.xshell.com/zh/downloading/?token=d2pyRU1TWURLM2E2ME14Vl90aEI5d0BhbUQ0WnllWmlrYXBSUmNtSGVrRFVB"
   },
   {
     "label": "网易UU加速器",
