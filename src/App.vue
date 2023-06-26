@@ -1,7 +1,5 @@
 <template>
-  <client-only>
-    <MainView />
-  </client-only>
+  <MainView />
 </template>
 
 <script setup>

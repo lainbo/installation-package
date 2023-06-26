@@ -100,15 +100,12 @@
 
 <script setup>
 import packageData from '@/assets/packageData.json'
-import { useHead } from '@vueuse/head'
 import Fuse from 'fuse.js'
 import { chunk } from 'lodash-es'
 import { Message } from '@arco-design/web-vue'
 const searchText = ref('')
 const 搜索框Ref = ref()
-useHead({
-  title: '装机软件下载列表',
-})
+
 onMounted(() => {
   搜索框Ref.value.focus()
 })
