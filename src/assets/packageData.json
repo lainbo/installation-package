@@ -224,8 +224,8 @@
     "downloadUrl": "https://dl.todesk.com/windows/ToDesk_Setup.exe"
   },
   {
-    "label": "Xshell",
-    "downloadUrl": "https://www.xshell.com/zh/downloading/?token=d2pyRU1TWURLM2E2ME14Vl90aEI5d0BhbUQ0WnllWmlrYXBSUmNtSGVrRFVB"
+    "label": "WindTerm",
+    "downloadUrl": "https://github.com/kingToolbox/WindTerm/releases/latest"
   },
   {
     "label": "网易UU加速器",

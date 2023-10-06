@@ -211,7 +211,8 @@ whenever(ctrl_f, () => {
 <style lang="scss" scoped>
 .card_wrapper {
   border: 1px solid #e5e6eb;
-  box-shadow: 2.8px 2.8px 2.2px -4px rgba(0, 0, 0, 0.02),
+  box-shadow:
+    2.8px 2.8px 2.2px -4px rgba(0, 0, 0, 0.02),
     6.7px 6.7px 5.3px -4px rgba(0, 0, 0, 0.028),
     12.5px 12.5px 10px -4px rgba(0, 0, 0, 0.035),
     22.3px 22.3px 17.9px -4px rgba(0, 0, 0, 0.042),
