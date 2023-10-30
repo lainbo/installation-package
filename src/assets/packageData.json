@@ -194,9 +194,8 @@
     "downloadUrl": "https://github.com/JetBrains/JetBrainsMono/releases/latest"
   },
   {
-    "label": "所有需要的字体合集（密码:kf65）",
-    "downloadUrl": "https://fast.uc.cn/s/5e8977420ab94",
-    "code": "kf65"
+    "label": "所有需要的字体合集",
+    "downloadUrl": "https://github.com/lainbo/font-storage"
   },
   {
     "label": "傲梅分区助手 （使用码:1122）",
