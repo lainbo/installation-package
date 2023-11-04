@@ -13,11 +13,6 @@
     "downloadUrl": "https://www.startallback.com/download.php"
   },
   {
-    "label": "WinRAR（提取码:7yat）",
-    "downloadUrl": "https://wwi.lanzoup.com/ixV4o0c0ukib",
-    "code": "7yat"
-  },
-  {
     "label": "搜狗输入法",
     "downloadUrl": "https://pinyin.sogou.com/"
   },
@@ -56,6 +51,10 @@
   {
     "label": "罗技驱动",
     "downloadUrl": "https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe"
+  },
+  {
+    "label": "达摩鲨驱动",
+    "downloadUrl": "http://www.darmoshark.cn/qudongxiazai.html"
   },
   {
     "label": "Office",
@@ -147,7 +146,11 @@
   },
   {
     "label": "Clash for Windows",
-    "downloadUrl": "https://github.com/Fndroid/clash_for_windows_pkg/releases/latest"
+    "downloadUrl": "https://download.lainbo.com/ClashForWindows_0.20.39.7z"
+  },
+  {
+    "label": "Clash Verge",
+    "downloadUrl": "https://download.lainbo.com/ClashVerge_1.3.8.7z"
   },
   {
     "label": "Upscayl",
@@ -156,10 +159,6 @@
   {
     "label": "noMeiryoUI",
     "downloadUrl": "https://github.com/Tatsu-syo/noMeiryoUI/releases/latest"
-  },
-  {
-    "label": "Clash Verge",
-    "downloadUrl": "https://github.com/zzzgydi/clash-verge/releases/latest"
   },
   {
     "label": "Dism++",
@@ -211,8 +210,7 @@
   },
   {
     "label": "Adobe系列合集",
-    "downloadUrl": "https://pan.baidu.com/s/1dTWFMPCeLngxzhGuAhbcUA?pwd=8888",
-    "code": "8888"
+    "downloadUrl": "https://www.superso.top/Adobe/"
   },
   {
     "label": "SumatraPDF",
@@ -227,20 +225,20 @@
     "downloadUrl": "https://github.com/kingToolbox/WindTerm/releases/latest"
   },
   {
-    "label": "网易UU加速器",
-    "downloadUrl": "https://uu.163.com/"
+    "label": "泡芙加速器",
+    "downloadUrl": "https://tg-yx.paofujiasu.com/home"
   },
   {
     "label": "Telegram",
     "downloadUrl": "https://telegram.org/dl/desktop/win64"
   },
   {
-    "label": "INNO3D TuneIT",
-    "downloadUrl": "http://www.inno3d.cc/tunit_ocutility"
-  },
-  {
     "label": "SvgSee",
     "downloadUrl": "https://github.com/tibold/svg-explorer-extension/releases/latest"
+  },
+  {
+    "label": "bitwarden",
+    "downloadUrl": "https://vault.bitwarden.com/download/?app=desktop&platform=windows"
   },
   {
     "label": "FxSound",
