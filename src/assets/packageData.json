@@ -73,6 +73,10 @@
     "downloadUrl": "http://download-cn.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip"
   },
   {
+    "label": "nvm desktop",
+    "downloadUrl": "https://github.com/1111mp/nvm-desktop/releases/latest"
+  },
+  {
     "label": "Volta",
     "downloadUrl": "https://github.com/volta-cli/volta/releases/latest"
   },
