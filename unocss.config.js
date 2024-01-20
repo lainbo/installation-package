@@ -13,6 +13,8 @@ export default defineConfig({
       'flex-c': 'flex items-center justify-center',
       'flex-y-c': 'flex items-center',
       'grid-c': 'grid place-items-center',
+      'icon-btn':
+        'text-[0.9em] inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600 !outline-none',
     },
     [/^horizontal-place-(.*)$/, ([, c]) => `flex items-center space-x-${c}`],
   ],

@@ -17,7 +17,9 @@ export default defineConfig({
         filepath: './.eslintrc-auto-import.json',
         globalsPropValue: true,
       },
+      dts: 'src/typings/auto-imports.d.ts',
       imports: ['vue', '@vueuse/core'],
+      vueTemplate: true,
     }),
     Components({
       resolvers: [ArcoResolver()],

@@ -2,7 +2,7 @@
   <div class="h-screen flex">
     <div class="w-full flex px-24px pb-48px pt-32px space-x-24px lt-xl:p-0">
       <section
-        class="card_wrapper relative h-full w-7/12 flex flex-col rounded-10px bg-white p-10px transition-all lt-md:(w-full) lt-xl:(rounded-none) !lt-xl:border-y-none !lt-xl:border-l-none !lt-xl:shadow-none"
+        class="card_wrapper relative h-full w-7/12 flex flex-col rounded-10px p-10px transition-all lt-md:(w-full) lt-xl:(rounded-none) !lt-xl:border-y-none !lt-xl:border-l-none !lt-xl:shadow-none"
       >
         <div class="mb-8px">
           <a-input
@@ -49,7 +49,7 @@
         <div
           class="card_wrapper mx-auto my-0 w-400px flex flex-col rounded-10px p-30px transition-all lt-xl:(w-320px)"
         >
-          <div class="mb-24px flex text-22px">批量下载设置</div>
+          <div class="mb-24px flex text-22px dark:text-white">批量下载设置</div>
           <a-form :model="formData" auto-label-width :disabled="startDownload">
             <a-form-item label="下载起始">
               <a-input-number
@@ -89,7 +89,9 @@
           </a-button>
         </div>
         <h2 class="mt-400px flex justify-center lt-xl:hidden">
-          <span class="select-none text-center text-70px font-bold text-light-400">
+          <span
+            class="relative flex-y-c select-none text-5xl text-#ffffff font-bold font-Inter text-shadow-md opacity-50 transition-colors dark:(text-gray-800 text-shadow-lg opacity-80)"
+          >
             装机软件下载列表
           </span>
         </h2>
@@ -218,5 +220,6 @@ whenever(ctrl_f, () => {
     22.3px 22.3px 17.9px -4px rgba(0, 0, 0, 0.042),
     41.8px 41.8px 33.4px -4px rgba(0, 0, 0, 0.05),
     100px 100px 80px -4px rgba(0, 0, 0, 0.07);
+  @apply bg-white dark:(border-gray-800 bg-#232324);
 }
 </style>
