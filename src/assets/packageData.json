@@ -85,6 +85,10 @@
     "downloadUrl": "https://www.nvidia.cn/Download/index.aspx?lang=cn"
   },
   {
+    "label": "NVIDIA Broadcast",
+    "downloadUrl": "https://www.nvidia.cn/geforce/broadcasting/broadcast-app/"
+  },
+  {
     "label": "Potplayer",
     "downloadUrl": "https://potplayer.org/"
   },
