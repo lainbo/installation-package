@@ -77,8 +77,8 @@
     "downloadUrl": "https://github.com/1111mp/nvm-desktop/releases/latest"
   },
   {
-    "label": "Volta",
-    "downloadUrl": "https://github.com/volta-cli/volta/releases/latest"
+    "label": "wget",
+    "downloadUrl": "https://eternallybored.org/misc/wget/"
   },
   {
     "label": "NVIDIA显卡驱动",
@@ -129,14 +129,6 @@
     "downloadUrl": "https://www.epicgames.com/shadowcomplex/download"
   },
   {
-    "label": "比特彗星",
-    "downloadUrl": "https://www.lanzoux.com/b073c7g4f"
-  },
-  {
-    "label": "有道词典",
-    "downloadUrl": "http://codown.youdao.com/cidian/YoudaoDict_webdict_default.exe"
-  },
-  {
     "label": "微信",
     "downloadUrl": "https://pc.weixin.qq.com/"
   },
@@ -146,19 +138,15 @@
   },
   {
     "label": "截图工具",
-    "downloadUrl": "https://www.snipaste.com/"
+    "downloadUrl": "https://txc.qq.com/products/614512"
   },
   {
     "label": "TrafficMonitor",
     "downloadUrl": "https://github.com/zhongyang219/TrafficMonitor"
   },
   {
-    "label": "Clash for Windows",
-    "downloadUrl": "https://download.lainbo.com/ClashForWindows_0.20.39.7z"
-  },
-  {
-    "label": "Clash Verge",
-    "downloadUrl": "https://download.lainbo.com/ClashVerge_1.3.8.7z"
+    "label": "Clash Verge Rev",
+    "downloadUrl": "https://github.com/clash-verge-rev/clash-verge-rev/releases/latest"
   },
   {
     "label": "Upscayl",
@@ -171,10 +159,6 @@
   {
     "label": "Dism++",
     "downloadUrl": "https://github.com/Chuyu-Team/Dism-Multi-language/releases/latest"
-  },
-  {
-    "label": "B站下载器",
-    "downloadUrl": "https://www.52pojie.cn/thread-1450767-1-1.html"
   },
   {
     "label": "WeMod",
@@ -229,8 +213,16 @@
     "downloadUrl": "https://dl.todesk.com/windows/ToDesk_Setup.exe"
   },
   {
+    "label": "rustdesk",
+    "downloadUrl": "https://rustdesk.com/download"
+  },
+  {
     "label": "WindTerm",
     "downloadUrl": "https://github.com/kingToolbox/WindTerm/releases/latest"
+  },
+  {
+    "label": "WindSend",
+    "downloadUrl": "https://github.com/doraemonkeys/WindSend/releases/latest"
   },
   {
     "label": "泡芙加速器",
