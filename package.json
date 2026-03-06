@@ -30,7 +30,7 @@
     "eslint-plugin-vue": "^9.20.1",
     "less": "^4.2.0",
     "prettier": "^3.2.4",
-    "sass": "^1.70.0",
+    "sass": "^1.97.3",
     "terser": "^5.27.0",
     "unocss": "^0.58.3",
     "unplugin-auto-import": "^0.17.3",
