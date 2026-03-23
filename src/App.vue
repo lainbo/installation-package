@@ -1,7 +1,7 @@
 <template>
   <div class="fixed inset-0">
     <button
-      class="icon-btn absolute right-3 top-3 z-1 text-22px dark:text-white"
+      class="absolute right-3 top-3 z-1 icon-btn text-22px dark:text-white"
       @click="toggleDark()"
     >
       <div i-ph-sun-bold dark:i-ph-moon-bold />
